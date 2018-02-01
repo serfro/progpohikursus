@@ -46,10 +46,7 @@ public class Massiivid {
     public static void main(String[] args) {
         int[] pikkused={176, 163, 158, 171, 169};
         int[] t = piirid(pikkused);
-        for (int i = 0; i < t.length; i++) {
-            System.out.println();
-            
-        }
+        System.out.println("suurim "+t[0]+ " ja " + "väiksem "+t[1]);
         System.out.println(summa(pikkused));
         System.out.println(keskmine(pikkused));
         System.out.println("Kokku: "+pikkused.length);
@@ -65,3 +62,18 @@ public class Massiivid {
         System.out.println(Arrays.stream(pikkused).sum());
     }
 }
+
+/*
+suurim 158 ja väiksem 176
+837
+167.4
+Kokku: 5
+176 169
+176
+163
+158
+171
+169
+837
+837
+*/
